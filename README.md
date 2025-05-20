@@ -4,7 +4,7 @@ Este proyecto define tres entidades principales:
 - **categories**: agrupa productos por nombre y descripción.
 - **products**: contiene los detalles de cada producto, como nombre, precio, stock, y su relación con una categoría.
 
-### Justificación de Ampliaciones
+### Justificación de Ampliaciones:
 
 - Se añadió la relación `category_id` en productos con `foreign key` para garantizar la integridad referencial.
 - Se establecieron defaults y restricciones como:
