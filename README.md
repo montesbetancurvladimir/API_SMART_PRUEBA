@@ -47,8 +47,8 @@ Se usaron middleware personalizados para controlar el acceso a las rutas según 
 2. Acepta la invitación de ingreso y podrá observar y probar la colección configurada y publicada en Railway
 https://app.getpostman.com/join-team?invite_code=be9b96a586d874bda20acb4e0e99fffd0b1db0999df3b0f2c58ec07c2c828203&target_code=86aced4236e018c3396446fce47cacd1
 
-### Despliegue
-Se usa Railway para la publicación de la API, se encuentra conectada con Github.
+### Despliegue:
+Se usa Railway para la publicación de la API, se encuentra conectada con Github
 La URL pùblica de despliegue es la siguiente:
 https://apismartprueba-production-12c9.up.railway.app
 Para el uso de la API, por ejemplo la URL del login seria:
