@@ -57,14 +57,25 @@ Crea un usuario por defecto tipo admin con las siguientes credenciales:
 
 ## Pasos para desgpliegue local.
 1. Clonar o descomprimir el proyecto
-git clone https://github.com/usuario/mi-api.git
+Git clone https://github.com/montesbetancurvladimir/API_SMART_PRUEBA.git
 
 2.  Instalar dependencias con Composer 
 composer install
 
-3. Copiar el archivo .env
-Duplica el archivo de entorno para crear la configuración local
-Abre el archivo .env y configura los datos de la base de datos local
+3. Copiar el archivo .env del ejemplo
+cp .env.example .env
+
+4. Crear la base de datos (MySQL) crea una nueva base de datos con el nombre BD_API_SMART
+
+5. Realizar la migración
+php artisan key:generate
+Php artisan migrate
+
+6. Ejecutar el seeder
+php artisan db:seed
+
+7. Levantar el servidor local
+php artisan serve
 
 Variables de entorno:
 Se puede usar el archivo .env por defecto que genera Laravel al crear un proyecto, para un despliegue local solo se debe modificar la sección de conexión a la base de datos.
@@ -76,18 +87,10 @@ DB_DATABASE=BD_API_SMART
 DB_USERNAME=root
 DB_PASSWORD=
 
-5. Crear la base de datos (MySQL) crea una nueva base de datos con el nombre BD_API_SMART
-
-6. El proyecto usa Sanctum como método de autenticación, se ejecutó el siguiente comando:
+El proyecto usa Sanctum como método de autenticación, se ejecutó el siguiente comando:
 php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 NOTA: No es necesario ejecutarlo de nuevo ya que los archivos de las migraciones ya se encuentran en la carpeta.
 
-7. Ejecutar migraciones y seeders
-php artisan migrate
-php artisan db:seed
-
-7. Levantar el servidor local
-php artisan serve
 
 
 
