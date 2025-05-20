@@ -50,9 +50,9 @@ https://app.getpostman.com/join-team?invite_code=be9b96a586d874bda20acb4e0e99fff
 ### Despliegue:
 Se usa Railway para la publicación de la API, se encuentra conectada con Github
 La URL pùblica de despliegue es la siguiente:
-https://apismartprueba-production-12c9.up.railway.app
+https://apismartprueba-production-e6ab.up.railway.app/
 Para el uso de la API, por ejemplo la URL del login seria:
-https://apismartprueba-production-12c9.up.railway.app/api/user/login
+https://apismartprueba-production-e6ab.up.railway.app/api/user/login
 TIPO POST
 JSON:
 {
