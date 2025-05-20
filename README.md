@@ -43,7 +43,22 @@ Se ha aplicado el principio de Separación de Responsabilidades para mantener un
 Se usaron middleware personalizados para controlar el acceso a las rutas según el rol del usuario. Esta implementación aprovecha el patrón "Chain of Responsibility", permitiendo filtrar las peticiones antes de que lleguen al controlador. No se utilizó el enfoque de policies, ya que este está orientado a aplicaciones más complejas o escenarios donde se requieren validaciones específicas sobre recursos, basadas en las condiciones del modelo o del usuario.
 
 ## Colección de Postman
+1. Ingresa al siguiente link
+2. Acepta la invitación de ingreso y podrá observar y probar la colección configurada y publicada en Railway
 https://app.getpostman.com/join-team?invite_code=be9b96a586d874bda20acb4e0e99fffd0b1db0999df3b0f2c58ec07c2c828203&target_code=86aced4236e018c3396446fce47cacd1
+
+### Despliegue
+Se usa Railway para la publicación de la API, se encuentra conectada con Github.
+La URL pùblica de despliegue es la siguiente:
+https://apismartprueba-production-12c9.up.railway.app
+Para el uso de la API, por ejemplo la URL del login seria:
+https://apismartprueba-production-12c9.up.railway.app/api/user/login
+TIPO POST
+JSON:
+{
+  "email": "admin@smart_talent.co",
+  "password": "admin123"
+}
 
 ### Despliegue
 - Se implementan Factories y Seeders para las tablas de products categories y users, con el objetivo de poblarlas con datos de prueba, para crearlos se usaron los siguientes comandos:
