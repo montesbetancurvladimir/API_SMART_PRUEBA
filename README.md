@@ -60,7 +60,6 @@ JSON:
   "password": "admin123"
 }
 
-### Despliegue
 - Se implementan Factories y Seeders para las tablas de products categories y users, con el objetivo de poblarlas con datos de prueba, para crearlos se usaron los siguientes comandos:
 php artisan make:seeder DatabaseSeeder
 php artisan make:seeder UserSeeder
